@@ -7,32 +7,35 @@
     <link rel="stylesheet" href="./css/output.css">
 </head>
 <body class="bg-gradient-to-r from-amber-400 to-amber-600 mx-2">
-    <div class="container mx-auto">
+    <div id="container" class="container mx-auto">
         <h1 class="uppercase text-5xl font-bold text-white text-center my-16"> <span class="text-red-900">climate</span> search engine </h1>
         
         <div  class="mb-10" id="result">
             <p class="text-white text-center text-xl">Here it's going to be the results</p>
         </div>
 
-        <form id="weather-form" class=" max-w-lg mx-auto text-center p-5 ">
+        <form id="weather_form" class=" max-w-lg mx-auto text-center pt-5 ">
             <div class="flex mb-4">
-                <input id="city-input" class="flex-1 py-2 px-2 rounded-md " type="text" name="city" placeholder="Enter the City">
+                <input id="city-input" class="flex-1 py-3 px-2 rounded-md " type="text" name="city" placeholder="Enter the City">
             </div>
             <div class="flex mb-4">
-                <select  id="contry-select" class="flex-1 py-2 px-2 rounded-md text-gray-600" name="contry" >
+                <select  id="country-select" class="flex-1 py-3 px-2 rounded-md text-gray-600" name="contry" >
                     <option disabled selected>--Select--</option>
-                    <option value="MX">Mexico</option>
-                    <option value="AG">Argentina</option>
-                    <option value="PU">Peru</option>
-                    <option value="EU">Unite States</option>
-                    <option value="CL">Colombia</option>
+                    <option value="AR">Argentina</option>
+                        <option value="CO">Colombia</option>
+                        <option value="CR">Costa Rica</option>
+                        <option value="ES">España</option>
+                        <option value="US">Estados Unidos</option>
+                        <option value="MX">México</option>
+                        <option value="PE">Perú</option>
                 </select>
             </div>
             <div class="flex">
-                <input id="form-submit" class="bg-red-900 flex-1 text-white font-bold py-2 text-xl rounded-md hover:bg-red-700  " type="submit" value="Get weather" >
+                <input id="form-submit" class="bg-red-900 flex-1 text-white font-bold py-3 text-xl rounded-md hover:bg-red-700 uppercase " type="submit" value="Get weather" >
             </div>
             
         </form>
     </div>
 </body>
+<script src="./js/index.js"></script>
 </html>
